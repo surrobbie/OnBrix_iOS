@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "wkdownloadhelper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gualtierofrigerio/WKDownloadHelper.git",
+      "state" : {
+        "revision" : "3a13843e37a4bdcbeca9f9357c17fec77893fa3a",
+        "version" : "0.3.1"
+      }
+    }
+  ],
+  "version" : 2
+}

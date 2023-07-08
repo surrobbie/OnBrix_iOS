@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A05B15C29D709B1007F0939 /* WebContentDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05B15B29D709B1007F0939 /* WebContentDownloader.swift */; };
+		8A320A282A4AB2D6009742F1 /* WKDownloadHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 8A320A272A4AB2D6009742F1 /* WKDownloadHelper */; };
+		8AC829AD2999B439006614F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829AC2999B439006614F6 /* AppDelegate.swift */; };
+		8AC829AF2999B439006614F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829AE2999B439006614F6 /* SceneDelegate.swift */; };
+		8AC829B12999B439006614F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829B02999B439006614F6 /* ViewController.swift */; };
+		8AC829B42999B439006614F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC829B22999B439006614F6 /* Main.storyboard */; };
+		8AC829B62999B43B006614F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC829B52999B43B006614F6 /* Assets.xcassets */; };
+		8AC829B92999B43B006614F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC829B72999B43B006614F6 /* LaunchScreen.storyboard */; };
+		8AC829C12999B4DF006614F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829C02999B4DF006614F6 /* Constants.swift */; };
+		8AC829C42999B50E006614F6 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829C32999B50E006614F6 /* ExtensionString.swift */; };
+		8AC829C62999B51B006614F6 /* ExtensionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829C52999B51B006614F6 /* ExtensionNotification.swift */; };
+		8ACDE6EC29ADEA71003747F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8ACDE6EB29ADEA70003747F1 /* GoogleService-Info.plist */; };
+		8AD651DD29AE15E4009999A7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD651DC29AE15E4009999A7 /* NotificationService.swift */; };
+		8AD651E129AE15E5009999A7 /* notificationservice.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8AD651DA29AE15E4009999A7 /* notificationservice.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AD651E729AE161D009999A7 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD651E629AE161D009999A7 /* DownloadManager.swift */; };
+		CFACF55DBD8F57FC61277438 /* Pods_OnBrix_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95B402158BDA615D638D7A8 /* Pods_OnBrix_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AD651DF29AE15E5009999A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AC829A12999B439006614F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AD651D929AE15E4009999A7;
+			remoteInfo = notificationservice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AD651E529AE15E5009999A7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8AD651E129AE15E5009999A7 /* notificationservice.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42CD57AD4F583AC26325F053 /* Pods-OnBrix_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBrix_iOS.debug.xcconfig"; path = "Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		87C9092225632AD32920C338 /* Pods-OnBrix_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBrix_iOS.release.xcconfig"; path = "Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8A05B15B29D709B1007F0939 /* WebContentDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentDownloader.swift; sourceTree = "<group>"; };
+		8AC829A92999B439006614F6 /* OnBrix_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnBrix_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC829AC2999B439006614F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AC829AE2999B439006614F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8AC829B02999B439006614F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AC829B32999B439006614F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AC829B52999B43B006614F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AC829B82999B43B006614F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AC829BA2999B43B006614F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AC829C02999B4DF006614F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8AC829C32999B50E006614F6 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
+		8AC829C52999B51B006614F6 /* ExtensionNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNotification.swift; sourceTree = "<group>"; };
+		8ACDE6EB29ADEA70003747F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8AD651D529AE0439009999A7 /* OnBrix_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnBrix_iOS.entitlements; sourceTree = "<group>"; };
+		8AD651DA29AE15E4009999A7 /* notificationservice.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notificationservice.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD651DC29AE15E4009999A7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8AD651DE29AE15E5009999A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD651E629AE161D009999A7 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		8AD651E829AE16AF009999A7 /* notificationservice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = notificationservice.entitlements; sourceTree = "<group>"; };
+		E95B402158BDA615D638D7A8 /* Pods_OnBrix_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBrix_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AC829A62999B439006614F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A320A282A4AB2D6009742F1 /* WKDownloadHelper in Frameworks */,
+				CFACF55DBD8F57FC61277438 /* Pods_OnBrix_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD651D729AE15E4009999A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66B9EF9118B862322FF237A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E95B402158BDA615D638D7A8 /* Pods_OnBrix_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AC829A02999B439006614F6 = {
+			isa = PBXGroup;
+			children = (
+				8AC829AB2999B439006614F6 /* OnBrix_iOS */,
+				8AD651DB29AE15E4009999A7 /* notificationservice */,
+				8AC829AA2999B439006614F6 /* Products */,
+				EEC3D98F885C4F5D4014BCEA /* Pods */,
+				66B9EF9118B862322FF237A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8AC829AA2999B439006614F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AC829A92999B439006614F6 /* OnBrix_iOS.app */,
+				8AD651DA29AE15E4009999A7 /* notificationservice.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AC829AB2999B439006614F6 /* OnBrix_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8AD651D529AE0439009999A7 /* OnBrix_iOS.entitlements */,
+				8ACDE6EB29ADEA70003747F1 /* GoogleService-Info.plist */,
+				8AC829C22999B4F8006614F6 /* Extension */,
+				8AC829C02999B4DF006614F6 /* Constants.swift */,
+				8AC829AC2999B439006614F6 /* AppDelegate.swift */,
+				8AC829AE2999B439006614F6 /* SceneDelegate.swift */,
+				8AC829B02999B439006614F6 /* ViewController.swift */,
+				8AC829B22999B439006614F6 /* Main.storyboard */,
+				8AC829B52999B43B006614F6 /* Assets.xcassets */,
+				8AC829B72999B43B006614F6 /* LaunchScreen.storyboard */,
+				8AC829BA2999B43B006614F6 /* Info.plist */,
+				8A05B15B29D709B1007F0939 /* WebContentDownloader.swift */,
+			);
+			path = OnBrix_iOS;
+			sourceTree = "<group>";
+		};
+		8AC829C22999B4F8006614F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8AC829C32999B50E006614F6 /* ExtensionString.swift */,
+				8AC829C52999B51B006614F6 /* ExtensionNotification.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8AD651DB29AE15E4009999A7 /* notificationservice */ = {
+			isa = PBXGroup;
+			children = (
+				8AD651E829AE16AF009999A7 /* notificationservice.entitlements */,
+				8AD651DC29AE15E4009999A7 /* NotificationService.swift */,
+				8AD651E629AE161D009999A7 /* DownloadManager.swift */,
+				8AD651DE29AE15E5009999A7 /* Info.plist */,
+			);
+			path = notificationservice;
+			sourceTree = "<group>";
+		};
+		EEC3D98F885C4F5D4014BCEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42CD57AD4F583AC26325F053 /* Pods-OnBrix_iOS.debug.xcconfig */,
+				87C9092225632AD32920C338 /* Pods-OnBrix_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AC829A82999B439006614F6 /* OnBrix_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AC829BD2999B43B006614F6 /* Build configuration list for PBXNativeTarget "OnBrix_iOS" */;
+			buildPhases = (
+				E834BD891E1627FE6A7B78AE /* [CP] Check Pods Manifest.lock */,
+				8AC829A52999B439006614F6 /* Sources */,
+				8AC829A62999B439006614F6 /* Frameworks */,
+				8AC829A72999B439006614F6 /* Resources */,
+				8AD651E529AE15E5009999A7 /* Embed Foundation Extensions */,
+				F5CCDBC7A99B55FD5F1B47B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AD651E029AE15E5009999A7 /* PBXTargetDependency */,
+			);
+			name = OnBrix_iOS;
+			packageProductDependencies = (
+				8A320A272A4AB2D6009742F1 /* WKDownloadHelper */,
+			);
+			productName = OnBrix_iOS;
+			productReference = 8AC829A92999B439006614F6 /* OnBrix_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AD651D929AE15E4009999A7 /* notificationservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD651E229AE15E5009999A7 /* Build configuration list for PBXNativeTarget "notificationservice" */;
+			buildPhases = (
+				8AD651D629AE15E4009999A7 /* Sources */,
+				8AD651D729AE15E4009999A7 /* Frameworks */,
+				8AD651D829AE15E4009999A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = notificationservice;
+			productName = notificationservice;
+			productReference = 8AD651DA29AE15E4009999A7 /* notificationservice.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AC829A12999B439006614F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					8AC829A82999B439006614F6 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					8AD651D929AE15E4009999A7 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 8AC829A42999B439006614F6 /* Build configuration list for PBXProject "OnBrix_iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AC829A02999B439006614F6;
+			packageReferences = (
+				8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper.git" */,
+			);
+			productRefGroup = 8AC829AA2999B439006614F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AC829A82999B439006614F6 /* OnBrix_iOS */,
+				8AD651D929AE15E4009999A7 /* notificationservice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AC829A72999B439006614F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC829B92999B43B006614F6 /* LaunchScreen.storyboard in Resources */,
+				8ACDE6EC29ADEA71003747F1 /* GoogleService-Info.plist in Resources */,
+				8AC829B62999B43B006614F6 /* Assets.xcassets in Resources */,
+				8AC829B42999B439006614F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD651D829AE15E4009999A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E834BD891E1627FE6A7B78AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnBrix_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5CCDBC7A99B55FD5F1B47B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AC829A52999B439006614F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC829C42999B50E006614F6 /* ExtensionString.swift in Sources */,
+				8AC829B12999B439006614F6 /* ViewController.swift in Sources */,
+				8AC829C62999B51B006614F6 /* ExtensionNotification.swift in Sources */,
+				8AC829AD2999B439006614F6 /* AppDelegate.swift in Sources */,
+				8AC829AF2999B439006614F6 /* SceneDelegate.swift in Sources */,
+				8A05B15C29D709B1007F0939 /* WebContentDownloader.swift in Sources */,
+				8AC829C12999B4DF006614F6 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD651D629AE15E4009999A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD651DD29AE15E4009999A7 /* NotificationService.swift in Sources */,
+				8AD651E729AE161D009999A7 /* DownloadManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AD651E029AE15E5009999A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AD651D929AE15E4009999A7 /* notificationservice */;
+			targetProxy = 8AD651DF29AE15E5009999A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AC829B22999B439006614F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AC829B32999B439006614F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AC829B72999B43B006614F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AC829B82999B43B006614F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AC829BB2999B43B006614F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AC829BC2999B43B006614F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AC829BE2999B43B006614F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CD57AD4F583AC26325F053 /* Pods-OnBrix_iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OnBrix_iOS/OnBrix_iOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = C7TWS54GZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OnBrix_iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "온브릭스";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"온브릭스\"에서 사진 촬영을 위해 카메라 사용을 허용하시겠습니까? 촬영된 사진은 앱에서 온브릭스 사용자 정보를 보여주는데 사용됩니다.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"온브릭스\"에서 동영상 촬영 및 음성인식을 위한 권한을 허용하시겠습니까? 촬영된 영상은 고객센터 문의에서 동영상 첨부를 접근하도록 허용합니다";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"온브릭스\"에서 사진 및 동영상 저장을 위한 권한을 허용하시겠습니까?  선명한 온브릭스 제품 사진을 저장하는 기능에 사용됩니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"온브릭스\"에서 사진 및 동영상 저장을 위한 첨부 권한을 허용하시겠습니까?  문의하기에서 사진을 등록 및 수정하는 기능 사용을 위해 사진 첨부를 접근하도록 허용합니다";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "사용자 맞춤 서비스 제공을 위해 권한을 허용해주세요. 애플 정책 기반 개인화된 광고 아이디를 활용합니다. ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8AC829BF2999B43B006614F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C9092225632AD32920C338 /* Pods-OnBrix_iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OnBrix_iOS/OnBrix_iOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = C7TWS54GZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OnBrix_iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "온브릭스";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"온브릭스\"에서 사진 촬영을 위해 카메라 사용을 허용하시겠습니까? 촬영된 사진은 앱에서 온브릭스 사용자 정보를 보여주는데 사용됩니다.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"온브릭스\"에서 동영상 촬영 및 음성인식을 위한 권한을 허용하시겠습니까? 촬영된 영상은 고객센터 문의에서 동영상 첨부를 접근하도록 허용합니다";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"온브릭스\"에서 사진 및 동영상 저장을 위한 권한을 허용하시겠습니까?  선명한 온브릭스 제품 사진을 저장하는 기능에 사용됩니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"온브릭스\"에서 사진 및 동영상 저장을 위한 첨부 권한을 허용하시겠습니까?  문의하기에서 사진을 등록 및 수정하는 기능 사용을 위해 사진 첨부를 접근하도록 허용합니다";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "사용자 맞춤 서비스 제공을 위해 권한을 허용해주세요. 애플 정책 기반 개인화된 광고 아이디를 활용합니다. ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8AD651E329AE15E5009999A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = notificationservice/notificationservice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7TWS54GZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationservice;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix.notificationservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AD651E429AE15E5009999A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = notificationservice/notificationservice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7TWS54GZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationservice;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix.notificationservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AC829A42999B439006614F6 /* Build configuration list for PBXProject "OnBrix_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AC829BB2999B43B006614F6 /* Debug */,
+				8AC829BC2999B43B006614F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AC829BD2999B43B006614F6 /* Build configuration list for PBXNativeTarget "OnBrix_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AC829BE2999B43B006614F6 /* Debug */,
+				8AC829BF2999B43B006614F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD651E229AE15E5009999A7 /* Build configuration list for PBXNativeTarget "notificationservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD651E329AE15E5009999A7 /* Debug */,
+				8AD651E429AE15E5009999A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gualtierofrigerio/WKDownloadHelper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A320A272A4AB2D6009742F1 /* WKDownloadHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper.git" */;
+			productName = WKDownloadHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8AC829A12999B439006614F6 /* Project object */;
+}
