@@ -22,7 +22,7 @@
 		8AD651DD29AE15E4009999A7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD651DC29AE15E4009999A7 /* NotificationService.swift */; };
 		8AD651E129AE15E5009999A7 /* notificationservice.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8AD651DA29AE15E4009999A7 /* notificationservice.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8AD651E729AE161D009999A7 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD651E629AE161D009999A7 /* DownloadManager.swift */; };
-		CFACF55DBD8F57FC61277438 /* Pods_OnBrix_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95B402158BDA615D638D7A8 /* Pods_OnBrix_iOS.framework */; };
+		F6CF26666BDA4D33C586DE39 /* Pods_OnBrix_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34AF2204849977293727655 /* Pods_OnBrix_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		42CD57AD4F583AC26325F053 /* Pods-OnBrix_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBrix_iOS.debug.xcconfig"; path = "Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		87C9092225632AD32920C338 /* Pods-OnBrix_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBrix_iOS.release.xcconfig"; path = "Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		64A359D3F7352310FFADC036 /* Pods-OnBrix_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBrix_iOS.debug.xcconfig"; path = "Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8A05B15B29D709B1007F0939 /* WebContentDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentDownloader.swift; sourceTree = "<group>"; };
 		8AC829A92999B439006614F6 /* OnBrix_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnBrix_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC829AC2999B439006614F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +70,8 @@
 		8AD651DE29AE15E5009999A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AD651E629AE161D009999A7 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		8AD651E829AE16AF009999A7 /* notificationservice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = notificationservice.entitlements; sourceTree = "<group>"; };
-		E95B402158BDA615D638D7A8 /* Pods_OnBrix_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBrix_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E88239186367AA1C655812D /* Pods-OnBrix_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBrix_iOS.release.xcconfig"; path = "Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		D34AF2204849977293727655 /* Pods_OnBrix_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBrix_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A320A282A4AB2D6009742F1 /* WKDownloadHelper in Frameworks */,
-				CFACF55DBD8F57FC61277438 /* Pods_OnBrix_iOS.framework in Frameworks */,
+				F6CF26666BDA4D33C586DE39 /* Pods_OnBrix_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,14 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		66B9EF9118B862322FF237A4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E95B402158BDA615D638D7A8 /* Pods_OnBrix_iOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8AC829A02999B439006614F6 = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +101,7 @@
 				8AD651DB29AE15E4009999A7 /* notificationservice */,
 				8AC829AA2999B439006614F6 /* Products */,
 				EEC3D98F885C4F5D4014BCEA /* Pods */,
-				66B9EF9118B862322FF237A4 /* Frameworks */,
+				ADDBA7CDF48B06CC053A78C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,11 +153,19 @@
 			path = notificationservice;
 			sourceTree = "<group>";
 		};
+		ADDBA7CDF48B06CC053A78C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D34AF2204849977293727655 /* Pods_OnBrix_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EEC3D98F885C4F5D4014BCEA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				42CD57AD4F583AC26325F053 /* Pods-OnBrix_iOS.debug.xcconfig */,
-				87C9092225632AD32920C338 /* Pods-OnBrix_iOS.release.xcconfig */,
+				64A359D3F7352310FFADC036 /* Pods-OnBrix_iOS.debug.xcconfig */,
+				8E88239186367AA1C655812D /* Pods-OnBrix_iOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -177,12 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AC829BD2999B43B006614F6 /* Build configuration list for PBXNativeTarget "OnBrix_iOS" */;
 			buildPhases = (
-				E834BD891E1627FE6A7B78AE /* [CP] Check Pods Manifest.lock */,
+				0ED78B2440C65C8B666A00E7 /* [CP] Check Pods Manifest.lock */,
 				8AC829A52999B439006614F6 /* Sources */,
 				8AC829A62999B439006614F6 /* Frameworks */,
 				8AC829A72999B439006614F6 /* Resources */,
 				8AD651E529AE15E5009999A7 /* Embed Foundation Extensions */,
-				F5CCDBC7A99B55FD5F1B47B9 /* [CP] Embed Pods Frameworks */,
+				2D5398805D4F78AA5249D9E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,7 +242,7 @@
 			);
 			mainGroup = 8AC829A02999B439006614F6;
 			packageReferences = (
-				8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper.git" */,
+				8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper" */,
 			);
 			productRefGroup = 8AC829AA2999B439006614F6 /* Products */;
 			projectDirPath = "";
@@ -276,7 +276,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E834BD891E1627FE6A7B78AE /* [CP] Check Pods Manifest.lock */ = {
+		0ED78B2440C65C8B666A00E7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,7 +298,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F5CCDBC7A99B55FD5F1B47B9 /* [CP] Embed Pods Frameworks */ = {
+		2D5398805D4F78AA5249D9E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -489,15 +489,16 @@
 		};
 		8AC829BE2999B43B006614F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42CD57AD4F583AC26325F053 /* Pods-OnBrix_iOS.debug.xcconfig */;
+			baseConfigurationReference = 64A359D3F7352310FFADC036 /* Pods-OnBrix_iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OnBrix_iOS/OnBrix_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C7TWS54GZC;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OnBrix_iOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "온브릭스";
@@ -517,7 +518,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -531,15 +532,16 @@
 		};
 		8AC829BF2999B43B006614F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87C9092225632AD32920C338 /* Pods-OnBrix_iOS.release.xcconfig */;
+			baseConfigurationReference = 8E88239186367AA1C655812D /* Pods-OnBrix_iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OnBrix_iOS/OnBrix_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C7TWS54GZC;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OnBrix_iOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "온브릭스";
@@ -559,7 +561,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -659,7 +661,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper.git" */ = {
+		8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gualtierofrigerio/WKDownloadHelper.git";
 			requirement = {
@@ -672,7 +674,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		8A320A272A4AB2D6009742F1 /* WKDownloadHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper.git" */;
+			package = 8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper" */;
 			productName = WKDownloadHelper;
 		};
 /* End XCSwiftPackageProductDependency section */
