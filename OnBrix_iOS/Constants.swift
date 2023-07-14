@@ -10,7 +10,8 @@ import Foundation
 class Constants: NSObject {
         
     //"https://www.onbrix.co.kr"
-    static var EndPoint:String = "https://dev.onbrix.co.kr"
+    //"https://dev.onbrix.co.kr"
+    static var EndPoint:String = "https://www.onbrix.co.kr"
 
     static var token:String = ""
 
