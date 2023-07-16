@@ -8,12 +8,10 @@
 import UIKit
 import FBSDKCoreKit
 import AdSupport
-import AppTrackingTransparency
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -69,19 +67,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         )
     }
     
-    
-    func requestATTracking() {
-        ATTrackingManager.requestTrackingAuthorization { status in
-                        switch status {
-                            case .authorized:
-                                print("enable tracking")
-                                //  Settings.setAdvertiserTrackingEnabled(true)
-                            case .denied:
-                                print("disable tracking")
-                            default:
-                                print("disable tracking")
-                        }
-                    }
-    }
 }
 
