@@ -8,6 +8,7 @@
 import UIKit
 import FBSDKCoreKit
 import AdSupport
+import AppTrackingTransparency
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -31,10 +32,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
         
-        /*
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
             self.requestATTracking()
-        })*/
+        })
         
     }
 
@@ -66,6 +66,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             annotation: [UIApplication.OpenURLOptionsKey.annotation]
         )
     }
-    
+   
+    func requestATTracking() {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                            switch status {
+                                case .authorized:
+                                    print("enable tracking")
+                                    //  Settings.setAdvertiserTrackingEnabled(true)
+                                case .denied:
+                                    print("disable tracking")
+                                default:
+                                    print("disable tracking")
+                            }
+                        }
+        }
 }
 

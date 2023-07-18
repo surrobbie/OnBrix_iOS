@@ -496,7 +496,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OnBrix_iOS/OnBrix_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = C7TWS54GZC;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -506,6 +506,7 @@
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"온브릭스\"에서 동영상 촬영 및 음성인식을 위한 권한을 허용하시겠습니까? 촬영된 영상은 고객센터 문의에서 동영상 첨부를 접근하도록 허용합니다";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"온브릭스\"에서 사진 및 동영상 저장을 위한 권한을 허용하시겠습니까?  선명한 온브릭스 제품 사진을 저장하는 기능에 사용됩니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"온브릭스\"에서 사진 및 동영상 저장을 위한 첨부 권한을 허용하시겠습니까?  문의하기에서 사진을 등록 및 수정하는 기능 사용을 위해 사진 첨부를 접근하도록 허용합니다";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "사용자 맞춤 서비스 제공을 위해 권한을 허용해주세요. 애플 정책 기반 개인화된 광고 아이디를 활용합니다. ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -538,7 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OnBrix_iOS/OnBrix_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = C7TWS54GZC;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -548,6 +549,7 @@
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"온브릭스\"에서 동영상 촬영 및 음성인식을 위한 권한을 허용하시겠습니까? 촬영된 영상은 고객센터 문의에서 동영상 첨부를 접근하도록 허용합니다";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"온브릭스\"에서 사진 및 동영상 저장을 위한 권한을 허용하시겠습니까?  선명한 온브릭스 제품 사진을 저장하는 기능에 사용됩니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"온브릭스\"에서 사진 및 동영상 저장을 위한 첨부 권한을 허용하시겠습니까?  문의하기에서 사진을 등록 및 수정하는 기능 사용을 위해 사진 첨부를 접근하도록 허용합니다";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "사용자 맞춤 서비스 제공을 위해 권한을 허용해주세요. 애플 정책 기반 개인화된 광고 아이디를 활용합니다. ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -577,7 +579,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = notificationservice/notificationservice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = C7TWS54GZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = notificationservice/Info.plist;
@@ -589,7 +591,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix.notificationservice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -604,7 +606,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = notificationservice/notificationservice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = C7TWS54GZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = notificationservice/Info.plist;
@@ -616,7 +618,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix.notificationservice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
