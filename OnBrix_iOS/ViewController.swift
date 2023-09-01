@@ -28,10 +28,10 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
-    //  ===
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didSubDataPush(_:)), name: NSNotification.Name("subDataPushed"), object: nil)
         
         self.initialize(webView: self.webView)
         
@@ -49,7 +49,7 @@ extension ViewController {
     
      override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
          if keyPath == #keyPath(WKWebView.url) {
-             guard let url = self.webView.url?.absoluteString else {
+             guard (self.webView.url?.absoluteString) != nil else {
                  return
              }
          }
@@ -73,9 +73,8 @@ extension ViewController {
         }
     }
     
-    @objc func didSubDataPush(){
+    @objc func didSubDataPush(_ notification: Notification){
         if let url = Constants.AppDelegate?.getData(key: "url") as? String{
-            
             if url != ""{
                 let url = URL(string: url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
                 let request:URLRequest = URLRequest(url: url)
@@ -86,14 +85,6 @@ extension ViewController {
                 
                 Constants.AppDelegate?.setData(data: "", key: "url")
             }
-        }
-    }
-    
-    @objc func didSubDataPushProc(){
-        let time = DispatchTime.now() + .milliseconds(200)
-        
-        DispatchQueue.main.asyncAfter(deadline: time) {
-            self.didSubDataPush()
         }
     }
     

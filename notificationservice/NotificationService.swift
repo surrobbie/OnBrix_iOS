@@ -34,11 +34,7 @@ class NotificationService: UNNotificationServiceExtension {
             }
             
             let url = bestAttemptContent.userInfo["url"] as? String
-            let linkUrl = bestAttemptContent.userInfo["linkUrl"] as? String
-
-            print("imageURLString : ", url, linkUrl)
-                
-            
+            let linkUrl = bestAttemptContent.userInfo["linkUrl"] as? String            
             contentHandler(bestAttemptContent)
         }
     }
