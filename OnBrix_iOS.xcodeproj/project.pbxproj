@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A05B15C29D709B1007F0939 /* WebContentDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05B15B29D709B1007F0939 /* WebContentDownloader.swift */; };
-		8A320A282A4AB2D6009742F1 /* WKDownloadHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 8A320A272A4AB2D6009742F1 /* WKDownloadHelper */; };
+		8A5E8C452C60BD4900653B99 /* WKDownloadHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 8A5E8C442C60BD4900653B99 /* WKDownloadHelper */; };
 		8AC829AD2999B439006614F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829AC2999B439006614F6 /* AppDelegate.swift */; };
 		8AC829AF2999B439006614F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829AE2999B439006614F6 /* SceneDelegate.swift */; };
 		8AC829B12999B439006614F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829B02999B439006614F6 /* ViewController.swift */; };
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A320A282A4AB2D6009742F1 /* WKDownloadHelper in Frameworks */,
+				8A5E8C452C60BD4900653B99 /* WKDownloadHelper in Frameworks */,
 				F6CF26666BDA4D33C586DE39 /* Pods_OnBrix_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +191,7 @@
 			);
 			name = OnBrix_iOS;
 			packageProductDependencies = (
-				8A320A272A4AB2D6009742F1 /* WKDownloadHelper */,
+				8A5E8C442C60BD4900653B99 /* WKDownloadHelper */,
 			);
 			productName = OnBrix_iOS;
 			productReference = 8AC829A92999B439006614F6 /* OnBrix_iOS.app */;
@@ -242,7 +242,7 @@
 			);
 			mainGroup = 8AC829A02999B439006614F6;
 			packageReferences = (
-				8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper" */,
+				8A5E8C432C60BD4900653B99 /* XCRemoteSwiftPackageReference "WKDownloadHelper" */,
 			);
 			productRefGroup = 8AC829AA2999B439006614F6 /* Products */;
 			projectDirPath = "";
@@ -496,7 +496,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OnBrix_iOS/OnBrix_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C7TWS54GZC;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -518,7 +518,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -539,7 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OnBrix_iOS/OnBrix_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C7TWS54GZC;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -561,7 +561,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.onbrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -661,7 +661,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper" */ = {
+		8A5E8C432C60BD4900653B99 /* XCRemoteSwiftPackageReference "WKDownloadHelper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gualtierofrigerio/WKDownloadHelper.git";
 			requirement = {
@@ -672,9 +672,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8A320A272A4AB2D6009742F1 /* WKDownloadHelper */ = {
+		8A5E8C442C60BD4900653B99 /* WKDownloadHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8A320A262A4AB2D6009742F1 /* XCRemoteSwiftPackageReference "WKDownloadHelper" */;
+			package = 8A5E8C432C60BD4900653B99 /* XCRemoteSwiftPackageReference "WKDownloadHelper" */;
 			productName = WKDownloadHelper;
 		};
 /* End XCSwiftPackageProductDependency section */

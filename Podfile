@@ -13,13 +13,7 @@ pod 'FacebookSDK'
 pod 'FacebookSDK/LoginKit' 
 pod 'FacebookSDK/ShareKit' 
 pod 'FacebookSDK/PlacesKit' 
-pod 'FBSDKMessengerShareKit' 
-
-  # pod 'Fabric', '~> 1.10.2'
-  # pod 'Crashlytics', '~> 3.13.4'
-
-  # Pods for OnBrix_iOS
- 
+pod 'FBSDKMessengerShareKit'  
 
 end
 

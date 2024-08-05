@@ -1,4 +1,5 @@
 {
+  "originHash" : "61f44f2b3c7eb6fc102f9b83d937bfbafbc66f571f476da7df96986244976969",
   "pins" : [
     {
       "identity" : "wkdownloadhelper",
@@ -10,5 +11,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
