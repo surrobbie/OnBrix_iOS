@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A05B15C29D709B1007F0939 /* WebContentDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05B15B29D709B1007F0939 /* WebContentDownloader.swift */; };
 		8A5E8C452C60BD4900653B99 /* WKDownloadHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 8A5E8C442C60BD4900653B99 /* WKDownloadHelper */; };
+		8A5E8C472C60E85C00653B99 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8A5E8C462C60E85C00653B99 /* PrivacyInfo.xcprivacy */; };
 		8AC829AD2999B439006614F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829AC2999B439006614F6 /* AppDelegate.swift */; };
 		8AC829AF2999B439006614F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829AE2999B439006614F6 /* SceneDelegate.swift */; };
 		8AC829B12999B439006614F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC829B02999B439006614F6 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		64A359D3F7352310FFADC036 /* Pods-OnBrix_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBrix_iOS.debug.xcconfig"; path = "Target Support Files/Pods-OnBrix_iOS/Pods-OnBrix_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8A05B15B29D709B1007F0939 /* WebContentDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentDownloader.swift; sourceTree = "<group>"; };
+		8A5E8C462C60E85C00653B99 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		8AC829A92999B439006614F6 /* OnBrix_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnBrix_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC829AC2999B439006614F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AC829AE2999B439006614F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				8AC829B72999B43B006614F6 /* LaunchScreen.storyboard */,
 				8AC829BA2999B43B006614F6 /* Info.plist */,
 				8A05B15B29D709B1007F0939 /* WebContentDownloader.swift */,
+				8A5E8C462C60E85C00653B99 /* PrivacyInfo.xcprivacy */,
 			);
 			path = OnBrix_iOS;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				8AC829B92999B43B006614F6 /* LaunchScreen.storyboard in Resources */,
 				8ACDE6EC29ADEA71003747F1 /* GoogleService-Info.plist in Resources */,
 				8AC829B62999B43B006614F6 /* Assets.xcassets in Resources */,
+				8A5E8C472C60E85C00653B99 /* PrivacyInfo.xcprivacy in Resources */,
 				8AC829B42999B439006614F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
